@@ -152,7 +152,13 @@ prism-framework/
 
 ## DACO — Declarative Agent & MCP Orchestration
 
-PRISM's companion protocol for tool-augmented agents. See [`docs/daco.md`](docs/daco.md).
+PRISM's companion protocol for tool-augmented agents.
+
+The pattern: **the LLM poses the questions**, not the developer. The agent receives a task description + a manifest of available MCPs. It builds the execution graph, resolves dependencies, fires parallel tool calls, and recovers from failures — autonomously.
+
+First production implementation: [Smart Rabbit MCP](https://www.smartrabbitfitness.com) (`npx smartrabbit-mcp`) — Claude Desktop asks the user for their fitness profile in natural language, orchestrates the Smart Rabbit API + PubMed, and returns a complete program.
+
+See [`docs/daco.md`](docs/daco.md) for the full specification.
 
 ---
 

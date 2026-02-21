@@ -62,11 +62,38 @@ Result: diversity in both reasoning AND tool execution paths
 
 This is particularly powerful for research tasks where different search strategies (different queries, different tools) complement each other.
 
-## Status
+## Existing Implementation: Smart Rabbit MCP
 
-DACO is in active development. The current implementation is a Cloudflare Worker MCP that routes to other MCP servers declaratively.
+The first concrete implementation of the DACO principle is the **Smart Rabbit MCP Server** — an MCP that exposes 3 tools to Claude Desktop:
 
-Specification and implementation details coming soon.
+- `generate_fitness_program` — takes a user profile, orchestrates the Smart Rabbit API
+- `search_pubmed` — integrates NCBI PubMed for scientific references automatically
+- `get_program_options` — exposes valid parameters
+
+The key pattern: **the LLM poses the questions**. The user doesn't fill a form. They describe what they want in natural language. Claude Desktop extracts parameters via conversation, calls the MCP, and returns a fully formatted program with PubMed references injected.
+
+```
+User: "I want a program for muscle, I train 4x/week, I have a full gym"
+        ↓
+Claude Desktop (conversation + parameter extraction)
+        ↓
+smart_rabbit MCP → Smart Rabbit API (Cloudflare Worker)
+        ↓ + pubmed MCP → NCBI API
+        ↓
+Complete program with scientific references
+```
+
+Install: `npx smartrabbit-mcp` — see [smartrabbitfitness.com](https://www.smartrabbitfitness.com)
+
+## The Next Step: General DACO
+
+The Smart Rabbit MCP is domain-specific. DACO generalizes the pattern:
+
+- Instead of calling one API backend, it discovers and orchestrates **multiple MCPs**
+- Works for any domain: research, legal, finance, content creation
+- The LLM still poses questions — but the execution graph spans multiple tool servers
+
+**Status:** Specification in progress. The architecture is validated by the Smart Rabbit implementation.
 
 ---
 
