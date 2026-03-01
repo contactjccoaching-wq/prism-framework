@@ -176,6 +176,14 @@ See [`docs/daco.md`](docs/daco.md) for the full specification.
 
 ---
 
+## Related Projects
+
+| Project | Role |
+|---------|------|
+| **PRISM** *(this repo)* | N-parallel sampling + meritocratic synthesis — *what to ask* |
+| **[Spinal Loop](https://github.com/contactjccoaching-wq/spinal-loop)** | Bio-inspired model routing — *who to ask* |
+| **[DACO](https://github.com/contactjccoaching-wq/daco-framework)** | MCP tool orchestration — *what to do with it* |
+
 ## License
 
 MIT — use it, fork it, build on it. Attribution appreciated, not required.
