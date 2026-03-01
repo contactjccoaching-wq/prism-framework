@@ -131,10 +131,14 @@ print(result["divergences"])
 ```
 prism-framework/
 ├── README.md
+├── LICENSE
+├── .env.example
+├── package.json              # Node.js dependencies
+├── requirements.txt          # Python dependencies
 ├── docs/
 │   ├── architecture.md       # Deep dive into the protocol
 │   ├── vs-personas.md        # Extended comparison with persona approaches
-│   └── meta-agent-design.md  # How to design your Meta-Agent prompt
+│   └── daco.md               # DACO companion protocol spec
 ├── examples/
 │   ├── javascript/
 │   │   ├── basic-sampling.js  # N-Sampling with Anthropic SDK

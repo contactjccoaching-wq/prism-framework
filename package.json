@@ -1,0 +1,27 @@
+{
+  "name": "prism-framework",
+  "version": "1.0.0",
+  "description": "Exploit native LLM stochasticity for multi-agent synthesis — no personas needed",
+  "type": "module",
+  "scripts": {
+    "example:sampling": "node examples/javascript/basic-sampling.js",
+    "example:meta": "node examples/javascript/meta-agent.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": ">=0.25.0"
+  },
+  "keywords": [
+    "llm",
+    "multi-agent",
+    "prompt-engineering",
+    "anthropic",
+    "ai-framework",
+    "stochastic-sampling"
+  ],
+  "author": "Jacques Chauvin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/contactjccoaching-wq/prism-framework"
+  }
+}
