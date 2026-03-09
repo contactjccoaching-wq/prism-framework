@@ -1,5 +1,8 @@
 # PRISM Framework
 
+[![Stars](https://img.shields.io/github/stars/contactjccoaching-wq/prism-framework?style=social)](https://github.com/contactjccoaching-wq/prism-framework)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **Prospective Refinement through Intelligent Synthesis and Multiplicity**
 
 > Exploit native LLM stochasticity instead of engineering artificial personas.
@@ -178,11 +181,11 @@ See [`docs/daco.md`](docs/daco.md) for the full specification.
 
 ## Related Projects
 
-| Project | Role |
-|---------|------|
-| **PRISM** *(this repo)* | N-parallel sampling + meritocratic synthesis — *what to ask* |
-| **[Spinal Loop](https://github.com/contactjccoaching-wq/spinal-loop)** | Bio-inspired model routing — *who to ask* |
-| **[DACO](https://github.com/contactjccoaching-wq/daco-framework)** | MCP tool orchestration — *what to do with it* |
+- [**immune**](https://github.com/contactjccoaching-wq/immune) — Adaptive memory system — learns patterns from every scan (+85% code quality)
+- [**chimera**](https://github.com/contactjccoaching-wq/chimera) — Bio-inspired 3-stage pipeline (Slime Mold → PRISM → Immune)
+- [**spinal-loop**](https://github.com/contactjccoaching-wq/spinal-loop) — Neuromuscular-inspired agent routing (cheap models first)
+- [**daco-framework**](https://github.com/contactjccoaching-wq/daco-framework) — Declarative Agent & MCP Orchestration on Cloudflare Workers
+- [**smartrabbit-mcp**](https://github.com/contactjccoaching-wq/smartrabbit-mcp) — AI workout generator MCP server ([smartrabbitfitness.com](https://www.smartrabbitfitness.com))
 
 ## License
 
