@@ -5,6 +5,8 @@
 
 **Prospective Refinement through Intelligent Synthesis and Multiplicity**
 
+![PRISM Framework](prism-framework.png)
+
 > Exploit native LLM stochasticity instead of engineering artificial personas.
 
 ---
